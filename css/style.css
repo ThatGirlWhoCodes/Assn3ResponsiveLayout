@@ -40,6 +40,10 @@ h1{
     font-style: normal;
     color: whitesmoke;
 }
+section h1{
+    padding: 1em;
+    text-align: center;
+}
 #container {
 	width:90%;
 	margin:auto;
@@ -74,7 +78,17 @@ nav section {
 	border:1px solid gold;
     margin-bottom: 15px;
 }
-
+section p{
+    padding: 1rem;
+}
+footer{
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem 1rem 0rem;
+    font-family: "paroli", sans-serif;
+    font-weight: 50;
+    font-style: 40;
+}
 
 /* Class for making YouTube/Vimeo videos responsive */
 
