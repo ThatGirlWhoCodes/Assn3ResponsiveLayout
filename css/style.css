@@ -1,3 +1,7 @@
+/*FONTS*/
+@import url("https://use.typekit.net/cdu5eha.css");
+
+
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
 	margin:0px;
@@ -18,17 +22,17 @@ html {
 
 body {
 	
-	
 }
 
-
+h1{
+    font-family: "anisette-std-petite-2", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 #container {
 	width:90%;
 	margin:auto;
 }
-
-
-
 figure {
 	margin:0px;
 }
@@ -36,9 +40,15 @@ figure {
 figure img {
 	width:100%;
 }
-
+.mobile{
+    background: yellow;
+}
+.desktop{
+    display: none;
+}
 nav section {
 	border:1px solid black;
+    margin-bottom: 15px;
 }
 
 
@@ -95,8 +105,27 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	#container {
 		width:80%;
 	}
-		
-	
+	.mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    nav{
+        display: grid;
+        /* grid-template-columns: auto auto; */
+        column-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav section{
+        flex: 0 1 48%;
+        /*^^^this is more elegant than using floats*/
+    
 } /* closes 769px+ */
 
 
@@ -104,8 +133,12 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-	
-	
+	nav section{
+        width: 0 1 32%;
+    }
+	nav{
+        grid-template-columns: repeat(3, 1fr);
+    }
 	
 } /* closes 1024px+ */
 
