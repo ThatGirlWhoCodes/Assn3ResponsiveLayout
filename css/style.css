@@ -85,7 +85,9 @@ section p{
 }
 figure img {
 	width:100%;
+    height: auto;
 }
+
 .mobile{
     font-family: "paroli", sans-serif;
     font-weight: 100;
@@ -122,11 +124,23 @@ footer{
 p{
     color: white;
 }
+
 .center-alignment{
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-top: 22.5rem;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    padding-top: 12.5rem;
+    align-items: center;
+    font: 1em sans-serif; */
 }
 /* Class for making YouTube/Vimeo videos responsive */
 
@@ -170,7 +184,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	
 	
 	
-	
 } /* closes 481px+ */
 
 
@@ -178,6 +191,15 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
+    figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+    .center-alignment{
+        text-align: center;
+    }
 	#container {
 		width:80%;
 	}
@@ -209,12 +231,20 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
+    figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
 	nav section{
         width: 0 1 32%;
     }
 	nav{
         grid-template-columns: repeat(3, 1fr);
     }
+
 	
 } /* closes 1024px+ */
 
