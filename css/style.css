@@ -52,6 +52,7 @@ body {
 }
 u{
     color: green;
+    opacity: 40%;
 }
 
 #resName{
@@ -153,14 +154,9 @@ p{
     color: black;
     font-weight: bold;
     padding-top: 22.5rem;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 12.5rem;
-    align-items: center;
-    font: 1em sans-serif; */
 }
+
+
 /* Class for making YouTube/Vimeo videos responsive */
 
 figure.responsive {
